@@ -1,3 +1,5 @@
+# Prod folder
+dist
 # Logs
 logs
 *.log

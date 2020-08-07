@@ -21,6 +21,8 @@ module.exports = {
   plugins: ['react'],
   rules: {
     semi: RULES.OFF,
-    'comma-dangle': RULES.OFF
+    'comma-dangle': RULES.OFF,
+    'import/prefer-default-export': RULES.OFF,
+    'react/prop-types': RULES.OFF
   }
 }

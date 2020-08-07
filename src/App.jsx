@@ -1,15 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { HomePage } from './pages'
+import { HomePage, ChallengeListPage } from './pages'
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/challenge">
-          <h1>Challenge List</h1>
-        </Route>
+        <Route exact path="/challenge" component={ChallengeListPage} />
         <Route exact path="/challenge/:challengeId">
           <h1>Single Challenge</h1>
         </Route>

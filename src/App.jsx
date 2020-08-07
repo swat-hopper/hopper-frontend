@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { HomePage, ChallengeListPage } from './pages'
+import { HomePage, ChallengeListPage, ProfilePage } from './pages'
 
 function App() {
   return (
@@ -11,9 +11,7 @@ function App() {
         <Route exact path="/challenge/:challengeId">
           <h1>Single Challenge</h1>
         </Route>
-        <Route exact path="/profile">
-          <h1>Profile</h1>
-        </Route>
+        <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/teacher">
           <h1>Teacher</h1>
         </Route>

@@ -1,0 +1,21 @@
+@import '../../../scss/variables.scss';
+
+.NavBar {
+  &__menu-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    &--list-item {
+      margin-left: 20px;
+      transition: color 300ms ease;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}

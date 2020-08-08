@@ -9,3 +9,12 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.NavBar--active {
+  color: $color-secondary;
+}

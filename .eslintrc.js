@@ -23,6 +23,7 @@ module.exports = {
     semi: RULES.OFF,
     'comma-dangle': RULES.OFF,
     'import/prefer-default-export': RULES.OFF,
-    'react/prop-types': RULES.OFF
+    'react/prop-types': RULES.OFF,
+    'react/button-has-type': RULES.OFF
   }
 }

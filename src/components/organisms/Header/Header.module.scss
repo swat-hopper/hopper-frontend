@@ -1,0 +1,14 @@
+@import '.././../../scss/mixins.scss';
+@import '.././../../scss/variables.scss';
+
+.Header {
+  padding: 20px 0;
+  background-color: $color-helper;
+  color: white;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include container;
+  }
+}

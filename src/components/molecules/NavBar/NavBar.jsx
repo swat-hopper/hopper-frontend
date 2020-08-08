@@ -1,18 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import styles from './NavBar.module.scss'
 
 export function NavBar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
+    <nav className={styles.NavBar}>
+      <ul className={styles['NavBar__menu-list']}>
+        <li className={styles['NavBar__menu-list--list-item']}>
+          <NavLink to="/" exact activeClassName="NavBar--active">
+            Home
+          </NavLink>
         </li>
-        <li>
-          <Link to="/challenge">Challenges</Link>
+        <li className={styles['NavBar__menu-list--list-item']}>
+          <NavLink to="/challenge" activeClassName="NavBar--active">
+            Challenges
+          </NavLink>
         </li>
-        <li>
-          <Link to="/profile">Profile</Link>
+        <li className={styles['NavBar__menu-list--list-item']}>
+          <NavLink to="/profile" activeClassName="NavBar--active">
+            Profile
+          </NavLink>
         </li>
       </ul>
     </nav>

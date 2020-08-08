@@ -1,0 +1,9 @@
+@import '../../../scss/variables.scss';
+
+.MenuButton {
+  background-color: $color-helper;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px 25px;
+}

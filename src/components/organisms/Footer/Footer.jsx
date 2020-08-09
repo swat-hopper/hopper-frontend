@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.scss'
+import { Icon } from '../../atoms'
 
 export function Footer() {
   return (
@@ -21,7 +22,7 @@ export function Footer() {
               rel="noopener noreferrer"
               title="Hopper organization on GitHub"
             >
-              <i className="fab fa-github" />
+              <Icon className="fab fa-github" size={32} color="black" />
             </a>
           </li>
         </ul>

@@ -1,0 +1,29 @@
+@import '../../../scss/variables.scss';
+
+.ChallengeCard {
+  padding: 10px;
+  border-radius: 7px;
+  width: 427px;
+  height: 381px;
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.25);
+  margin: 30px;
+
+  &__content {
+    figure img {
+      width: 407px;
+      height: 226px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+    &--info {
+      span {
+        color: #3d3c3c;
+        font-size: 18px;
+      }
+    }
+    h3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

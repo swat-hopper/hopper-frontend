@@ -13,6 +13,7 @@ module.exports = function webpackConfig(env) {
 
   if (env.NODE_ENV === 'production') {
     plugins.push(new CleanWebpackPlugin())
+    plugins.push(new MiniCssExtractPlugin())
   }
 
   return {

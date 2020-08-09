@@ -1,11 +1,12 @@
 import React from 'react'
-import { NavBar } from '../components/organisms'
+import { Header, Footer } from '../components/organisms'
 
 export function MainTemplate({ children }) {
   return (
     <>
-      <NavBar />
+      <Header />
       {children}
+      <Footer />
     </>
   )
 }

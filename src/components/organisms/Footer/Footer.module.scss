@@ -1,0 +1,32 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.Footer {
+  background-color: $color-secondary;
+  padding: 25px 0;
+  &__container {
+    align-items: center;
+    @include container;
+    @include display-grid;
+    @include grid-template-columns(1fr);
+    @include media(tablet) {
+      @include grid-template-columns(1fr 1fr 1fr);
+    }
+  }
+  &__message {
+    text-align: center;
+    font-size: 28px;
+    font-family: $font-secondary;
+  }
+  &__social-media {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &--item {
+      font-size: 32px;
+    }
+  }
+}

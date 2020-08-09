@@ -1,22 +1,31 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { Button } from '../../atoms'
 import styles from './CardUserBanner.module.scss'
 
-export function CardUserBanner() {
+export function CardUserBanner({
+  /* userId,  */ avatar,
+  username,
+  challengeId
+}) {
+  const { push } = useHistory()
+
+  function handleClick(event) {
+    event.preventDefault()
+    push(`challenge/${challengeId}`)
+  }
+
   return (
     <div className={styles.CardUserBanner}>
       <div className={styles.CardUserBanner__info}>
         <div className={styles.CardUserBanner__img}>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYYQl-Dux-cj6FuNnR4mEcq_Hq8fgrtH2jZA&usqp=CAU"
-            alt="User"
-          />
+          <img src={avatar} alt={username} />
         </div>
         <div className={styles.CardUserBanner__user}>
-          <p>@NameMentor</p>
+          <p>@{username}</p>
         </div>
       </div>
-      <Button>View Challenge</Button>
+      <Button onClick={handleClick}>View Challenge</Button>
     </div>
   )
 }

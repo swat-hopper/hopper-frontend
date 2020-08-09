@@ -1,7 +1,8 @@
 import React from 'react'
+import { CardUserBanner } from '../../molecules'
 import styles from './ChallengeCard.module.scss'
 
-export function ChallengeCard({ children }) {
+export function ChallengeCard() {
   return (
     <div className={styles.ChallengeCard}>
       <div className={styles.ChallengeCard__content}>
@@ -18,7 +19,7 @@ export function ChallengeCard({ children }) {
         </div>
         <h3>HTML | CSS | JS</h3>
       </div>
-      {children}
+      <CardUserBanner />
     </div>
   )
 }

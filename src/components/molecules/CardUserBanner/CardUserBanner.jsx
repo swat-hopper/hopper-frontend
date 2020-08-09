@@ -1,7 +1,8 @@
 import React from 'react'
+import { Button } from '../../atoms'
 import styles from './CardUserBanner.module.scss'
 
-export function CardUserBanner({ children }) {
+export function CardUserBanner() {
   return (
     <div className={styles.CardUserBanner}>
       <div className={styles.CardUserBanner__info}>
@@ -15,7 +16,7 @@ export function CardUserBanner({ children }) {
           <p>@NameMentor</p>
         </div>
       </div>
-      {children}
+      <Button>View Challenge</Button>
     </div>
   )
 }

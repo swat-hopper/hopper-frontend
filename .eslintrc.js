@@ -10,7 +10,7 @@ module.exports = {
     es2020: true,
     node: true
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true

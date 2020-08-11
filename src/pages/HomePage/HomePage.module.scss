@@ -21,4 +21,22 @@
       }
     }
   }
+  &__creative-team {
+    padding: 30px 0;
+    &--container {
+      @include container;
+      h1 {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+    }
+    &--grid {
+      gap: 20px;
+      @include display-grid;
+      @include grid-template-columns(1fr);
+      @include media(tablet) {
+        @include grid-template-columns(1fr 1fr 1fr);
+      }
+    }
+  }
 }

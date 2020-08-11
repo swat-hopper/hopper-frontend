@@ -1,0 +1,12 @@
+.TeamItem {
+  text-align: center;
+  figure img {
+    width: 215px;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  p {
+    font-size: 20px;
+  }
+}

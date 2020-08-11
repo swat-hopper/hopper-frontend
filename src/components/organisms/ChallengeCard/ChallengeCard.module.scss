@@ -12,10 +12,18 @@
       object-fit: cover;
       border-radius: 7px;
     }
-    &--info {
-      span {
-        color: #3d3c3c;
-        font-size: 18px;
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      &--details {
+        span {
+          color: #3d3c3c;
+          font-size: 18px;
+        }
+      }
+      &--icon {
+        display: inline-flex;
+        align-items: center;
       }
     }
     h3 {

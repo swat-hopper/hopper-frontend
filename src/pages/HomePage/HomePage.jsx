@@ -4,13 +4,13 @@ import styles from './HomePage.module.scss'
 import challengesData from './challengesMockData.json'
 import { ChallengeCard } from '../../components/organisms'
 import teamMockData from './teamMockData.json'
-import { TeamItem } from '../../components/molecules'
+import { TeamItem, Hero, HomeText } from '../../components/molecules'
 
 export function HomePage() {
   return (
     <MainTemplate>
       <div className={styles.HomePage}>
-        <h1>This is the home page</h1>
+        <Hero />
         <section className={styles['HomePage__popular-challenges']}>
           <div className={styles['HomePage__popular-challenges--container']}>
             <h1>Popular challenges</h1>
@@ -28,6 +28,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
+
+        <HomeText />
+
         <section className={styles['HomePage__creative-team']}>
           <div className={styles['HomePage__creative-team--container']}>
             <h1>Creative Team</h1>

@@ -1,3 +1,5 @@
 export * from './CardUserBanner'
 export * from './NavBar'
 export * from './TeamItem'
+export * from './ChallengeBanner'
+export * from './ChallengeDetails'

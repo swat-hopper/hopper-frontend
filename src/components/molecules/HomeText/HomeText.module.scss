@@ -1,0 +1,27 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.HomeText {
+  background-color: $color-helper;
+  color: white;
+  padding: 90px 0;
+  &__container {
+    @include container;
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 34px;
+      font-weight: lighter;
+    }
+    span {
+      display: block;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}

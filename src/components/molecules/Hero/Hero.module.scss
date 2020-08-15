@@ -1,0 +1,35 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.Hero {
+  padding: 60px 0;
+  gap: 40px;
+  @include container;
+  @include display-grid;
+  @include grid-template-columns(1fr);
+  @include media(tablet) {
+    @include grid-template-columns(1fr 1fr);
+  }
+
+  &__text {
+    padding-left: 80px;
+    h1 {
+      font-size: 80px;
+      line-height: 1;
+      color: $color-helper;
+      margin-bottom: 50px;
+    }
+    span {
+      font-size: 18px;
+      float: left;
+      text-align: end;
+    }
+  }
+  figure {
+    max-width: 400px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

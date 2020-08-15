@@ -1,6 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { HomePage, ChallengeListPage, ProfilePage } from './pages'
+import {
+  HomePage,
+  ChallengeListPage,
+  ProfilePage,
+  ChallengeDetailsPage
+} from './pages'
 import './scss/global.scss'
 
 function App() {
@@ -10,7 +15,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/challenge" component={ChallengeListPage} />
         <Route exact path="/challenge/:challengeId">
-          <h1>Single Challenge</h1>
+          <ChallengeDetailsPage />
         </Route>
         <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/teacher">

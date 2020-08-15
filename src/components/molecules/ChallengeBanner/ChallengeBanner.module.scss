@@ -1,0 +1,40 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/variables.scss';
+
+.ChallengeBanner {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  gap: 20px;
+  @include container;
+  @include display-grid;
+  @include grid-template-columns(1fr);
+  @include media(tablet) {
+    gap: 40px;
+    @include grid-template-columns(1fr 1fr);
+  }
+  &__image {
+    // max-width: 580px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--details {
+      p {
+        margin-bottom: 12px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      h3 {
+        font-size: 24px;
+        font-weight: normal;
+      }
+    }
+  }
+}

@@ -1,10 +1,20 @@
 .TeamItem {
   text-align: center;
-  figure img {
-    width: 215px;
-    height: 215px;
-    object-fit: cover;
-    border-radius: 50%;
+  figure {
+    opacity: 0.5;
+    transition: 0.5s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
   }
   p {
     font-size: 20px;

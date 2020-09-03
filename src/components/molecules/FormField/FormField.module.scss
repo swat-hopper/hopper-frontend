@@ -1,0 +1,23 @@
+@import '../../../scss/variables.scss';
+
+.FormField {
+  margin-bottom: 20px;
+  max-width: 655px;
+
+  label {
+    width: 100%;
+    color: $color-helper;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 7px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid $color-border;
+    height: 40px;
+  }
+}

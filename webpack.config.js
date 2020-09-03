@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -13,6 +14,11 @@ module.exports = function webpackConfig(env) {
 
   if (env.NODE_ENV === 'production') {
     plugins.push(new CleanWebpackPlugin())
+    plugins.push(
+      new CopyPlugin({
+        patterns: [{ from: 'public/_redirects' }]
+      })
+    )
     plugins.push(new MiniCssExtractPlugin())
   }
 

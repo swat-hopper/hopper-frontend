@@ -1,0 +1,20 @@
+{
+  "button": "Edit Profile",
+  "fields": [
+    {
+      "label": "Your Name",
+      "id": "ProfileFormName",
+      "type": "text"
+    },
+    {
+      "label": "Nick Name",
+      "id": "ProfileFormNick",
+      "type": "text"
+    },
+    {
+      "label": "Email",
+      "id": "ProfileFormEmail",
+      "type": "email"
+    }
+  ]
+}

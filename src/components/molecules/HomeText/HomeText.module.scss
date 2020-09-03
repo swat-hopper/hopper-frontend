@@ -6,7 +6,10 @@
   color: white;
   padding: 90px 0;
   &__container {
-    @include container;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 32px;
+
     h1 {
       text-align: center;
       margin-bottom: 50px;
@@ -14,7 +17,7 @@
     }
     p {
       font-size: 20px;
-      margin-bottom: 34px;
+      margin-bottom: 40px;
       font-weight: lighter;
     }
     span {
